@@ -8,10 +8,11 @@ import random
 
 import logging
 
+from TOKEN import TOKEN
+
 with open('words.json', encoding='utf-8') as file:
     words = json.load(file)
 
-TOKEN = '8420686576:AAE0IaqQjeNtmkRbEMBapRu-Y4YJNb-r_-w'
 logging.basicConfig(
     level=logging.INFO,
     encoding='utf-8',
