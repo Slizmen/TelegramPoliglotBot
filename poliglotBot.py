@@ -30,7 +30,6 @@ class Bot:
             logging.info('Новый пользователь')
             self.bot.send_message(message.chat.id, '''Данный бот помогает учить английский язык.
 Он выводит уровень знаний после вашего перевода данных им слов.
-Проект реализовал Чукичев Константин.
             ''', reply_markup=keyboard)
 
         @self.bot.message_handler(regexp=r'Начать игру')
@@ -44,7 +43,6 @@ class Bot:
             logging.info('Получена информация о боте')
             self.bot.send_message(message.chat.id, '''Данный бот помогает учить английский язык.
 Он выводит уровень знаний после вашего перевода данных им слов.
-Проект реализовал Чукичев Константин.
             ''', reply_markup=keyboard)
 
         @self.bot.message_handler(func=lambda message: True)
